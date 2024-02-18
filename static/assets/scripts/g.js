@@ -17,6 +17,78 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Dynast.io',
       link: 'https://dynast.io',
       image: '/assets/media/icons/dynast-io.webp',
+      categories: ['all'],
+    },
+    {
+      name: 'Stickman Archero Fight',
+      link: 'https://html5.gamedistribution.com/rvvASMiM/3f4c166817ad4fd4b5b05d9adba22fcd/index.html',
+      image: '/assets/media/icons/stickman-archero-fight.webp',
+      categories: ['all'],
+    },
+    {
+      name: 'Earn to Die 2012 Part 2',
+      link: 'https://games-online.io/game/EarnToDie/index.html',
+      image: '/assets/media/icons/earntodie2012part2.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Lostgamer',
+      link: 'https://lostgamer.io',
+      image: '/assets/media/icons/lostgamerio.jpg',
+      categories: ['all', '2P'],
+    },
+    {
+      name: 'Thisissand',
+      link: 'https://thisissand.com/',
+      image: '/assets/media/icons/thisissand.webp',
+      categories: ['all'],
+    },
+    {
+      name: 'digdig.io',
+      link: 'https://digdig.io/',
+      image: '/assets/media/icons/digdigio.jfif',
+      categories: ['all', '2P'],
+    },
+    {
+      name: 'Big Tower Tiny Square',
+      link: 'https://www.coolmathgames.com/0-big-tower-tiny-square/play',
+      image: '/assets/media/icons/bigtowertinysquare.jpg',
+      categories: ['all'],
+    },
+    {
+      name: 'The Impossible Quiz',
+      link: 'https://the-impossible-quiz.game-files.crazygames.com/ruffle/theimpossiblequiz.html',
+      image: '/assets/media/icons/theimpossiblequiz.webp',
+      categories: ['all'],
+    },
+    {
+      name: 'Helix Jump',
+      link: 'https://helix-jump.game-files.crazygames.com/helix-jump/1/index.html',
+      image: '/assets/media/icons/helixjump.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'skribbl',
+      link: 'https://skribbl.io/',
+      image: '/assets/media/icons/skribblio.jfif',
+      categories: ['all', '2P'],
+    },
+    {
+      name: 'Wings!',
+      link: 'https://wings.io/',
+      image: '/assets/media/icons/wingsio.jfif',
+      categories: ['all', '2P'],
+    },
+    {
+      name: 'Stomped.io',
+      link: 'https://stomped.io',
+      image: '/assets/media/icons/stompedio.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Age of War',
+      link: 'https://age-of-war.game-files.crazygames.com/ruffle/ageofwar.html',
+      image: '/assets/media/icons/ageofwar.jpg',
       categories: ['all', '2P'],
     },
     // idk why brain test on poki doesnt work when i take out everything after "index.html?" so i left it there, usually it works without it tho
@@ -1100,6 +1172,54 @@ document.addEventListener('DOMContentLoaded', () => {
       categories: ['all'],
     },
     {
+      name: 'Google Baseball',
+      link: 'https://www.google.com/logos/2019/july4th19/r6/july4th19.html',
+      image: '/assets/media/icons/googlebaseball.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Deal or No Deal',
+      link: 'https://f.kbhgames.com/RS/game.php?r=//f.kbhgames.com/2018/swf/dondeal2.swf&w=640&h=480&warnsupport=true',
+      image: '/assets/media/icons/deal-or-no-deal.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Deadshot',
+      link: 'https://deadshot.io',
+      image: '/assets/media/icons/deadshot.png',
+      categories: ['all'],
+    },
+    {
+      name: 'Rainbow Tower',
+      link: 'https://www.mathplayground.com/mobile_rainbow_tower/index.html',
+      image: '/assets/media/icons/rainbowtower.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Doodle Jump',
+      link: 'https://doodlejump.pro/',
+      image: '/assets/media/icons/doodlejump.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Madalin Stunt Cars Multiplayer',
+      link: 'https://games.crazygames.com/en_US/madalin-cars-multiplayer/index.html',
+      image: '/assets/media/icons/madalinmultiplayer.webp',
+      categories: ['all', '2P'],
+    },
+    {
+      name: 'Madalin Stunt Cars 2',
+      link: 'https://games.crazygames.com/en_US/madalin-stunt-cars-2/index.html',
+      image: '/assets/media/icons/madalinstuntcars2.jfif',
+      categories: ['all'],
+    },
+    {
+      name: 'Madalin Stunt Cars 3',
+      link: 'https://games.crazygames.com/en_US/madalin-stunt-cars-3/index.html',
+      image: '/assets/media/icons/madalinstuntcars3.jfif',
+      categories: ['all'],
+    },
+    {
       name: 'PM: Light Platinum',
       link: 'https://browncha023.github.io/GBA/launcher.html#pokemonlp',
       image: '/assets/media/icons/lp.webp',
@@ -1338,7 +1458,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link: '/y/retro/index.html',
       image: '/assets/media/icons/retro.webp',
       categories: ['all,', 'sports', 'local'],
-      localW: 'true',
+      local: 'true',
     },
     {
       name: 'Roblox (Now.GG)',
@@ -1632,14 +1752,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (app.local) {
         saveToLocal(app.link)
-        window.location.href = '&'
+        window.location.href = '1'
       } else if (app.local2) {
         saveToLocal(app.link)
         window.location.href = app.link
       } else if (app.blank) {
         blank(app.link)
       } else {
-        go(app.link)
+        if (!app.local) {
+          go(app.link)
+        }
       }
 
       return false
